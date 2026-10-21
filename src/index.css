@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+}
+
+/* Custom speech bubble styling */
+.speech-bubble {
+  position: relative;
+  border: 1.5px solid #1c1917;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 6px 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Speech bubble tails */
+.speech-bubble-tail-down::after,
+.speech-bubble-tail-down::before {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: 20px;
+  border-width: 9px 8px 0;
+  border-style: solid;
+  border-color: #1c1917 transparent;
+  display: block;
+  width: 0;
+}
+
+.speech-bubble-tail-down::after {
+  bottom: -7px;
+  border-color: #ffffff transparent;
+}
+
+.speech-bubble-tail-up::after,
+.speech-bubble-tail-up::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: 20px;
+  border-width: 0 8px 9px;
+  border-style: solid;
+  border-color: #1c1917 transparent;
+  display: block;
+  width: 0;
+}
+
+.speech-bubble-tail-up::after {
+  top: -7px;
+  border-color: #ffffff transparent;
+}
+
+/* Print Optimization */
+@media print {
+  @page {
+    size: landscape;
+    margin: 1cm;
+  }
+  
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-container {
+    box-shadow: none !important;
+    border: 2px solid #000000 !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}

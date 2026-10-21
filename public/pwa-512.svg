@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="128" fill="#18181b"/>
+  <!-- Outline of a journey board -->
+  <rect x="56" y="56" width="400" height="400" rx="28" fill="none" stroke="#f4f4f5" stroke-width="14"/>
+  <!-- Top header divider -->
+  <line x1="56" y1="170" x2="456" y2="170" stroke="#f4f4f5" stroke-width="12"/>
+  <!-- Column dividers -->
+  <line x1="156" y1="170" x2="156" y2="350" stroke="#71717a" stroke-width="8" stroke-dasharray="8 8"/>
+  <line x1="256" y1="170" x2="256" y2="350" stroke="#71717a" stroke-width="8" stroke-dasharray="8 8"/>
+  <line x1="356" y1="170" x2="356" y2="350" stroke="#71717a" stroke-width="8" stroke-dasharray="8 8"/>
+  <!-- Bottom divider -->
+  <line x1="56" y1="350" x2="456" y2="350" stroke="#f4f4f5" stroke-width="12"/>
+  <!-- Avatar in header -->
+  <circle cx="116" cy="113" r="32" fill="none" stroke="#38bdf8" stroke-width="10"/>
+  <circle cx="116" cy="104" r="12" fill="#38bdf8"/>
+  <path d="M96 132 A 20 20 0 0 1 136 132" fill="none" stroke="#38bdf8" stroke-width="8"/>
+  <!-- Header title lines -->
+  <rect x="170" y="96" width="130" height="14" rx="7" fill="#f4f4f5"/>
+  <rect x="170" y="120" width="180" height="10" rx="5" fill="#a1a1aa"/>
+  <!-- Motivation Curve -->
+  <path d="M 56 280 C 130 200, 180 340, 256 310 C 332 280, 390 190, 456 220" fill="none" stroke="#38bdf8" stroke-width="16" stroke-linecap="round"/>
+  <!-- Control points -->
+  <circle cx="120" cy="225" r="14" fill="#38bdf8" stroke="#ffffff" stroke-width="6"/>
+  <circle cx="210" cy="325" r="14" fill="#38bdf8" stroke="#ffffff" stroke-width="6"/>
+  <circle cx="330" cy="285" r="14" fill="#38bdf8" stroke="#ffffff" stroke-width="6"/>
+  <circle cx="430" cy="210" r="14" fill="#38bdf8" stroke="#ffffff" stroke-width="6"/>
+</svg>
