@@ -1,63 +1,63 @@
 import type { JourneyMapData } from '../types/journey';
 
 export const EXAMPLE_JOURNEY: JourneyMapData = {
-  id: 'example-jumping-jamie',
-  title: 'Customer Journey Map Example',
+  id: 'example-saas-journey',
+  title: 'Customer Journey Map',
   persona: {
-    name: 'JUMPING JAMIE',
+    name: 'ALEX RIVERA',
     scenario:
-      'Scenario: Jamie needs to switch her current mobile plan. She wants a plan that can save her money without having to sacrifice usage limits.',
+      'Szenario: Alex sucht nach einer modernen Softwarelösung für sein Team, um manuelle Arbeitsabläufe zu automatisieren und die Produktivität nachhaltig zu steigern.',
     avatarType: 'icon',
     avatarIcon: 'user',
-    expectationsTitle: 'EXPECTATIONS',
+    expectationsTitle: 'ERWARTUNGEN',
     expectations: [
-      'Clear online information',
-      'Ability to compare plan breakdowns',
-      'Friendly and helpful customer support',
+      'Transparente Preismodelle ohne versteckte Kosten',
+      'Intuitive Benutzeroberfläche und schnelle Einrichtung',
+      'Kompetenter und reaktionsschneller Kundensupport',
     ],
   },
   stages: [
     {
       id: 'stage-1',
-      title: 'DEFINE',
+      title: 'ENTDECKEN',
       steps: [
-        { id: 's1-1', text: 'Review current plan' },
-        { id: 's1-2', text: 'Define parameters for new plan' },
+        { id: 's1-1', text: 'Engpässe im aktuellen Arbeitsablauf erkennen' },
+        { id: 's1-2', text: 'Anforderungen und Kriterien im Team definieren' },
       ],
     },
     {
       id: 'stage-2',
-      title: 'COMPARE',
+      title: 'VERGLEICHEN',
       steps: [
-        { id: 's2-1', text: 'Watches commercial on TV' },
+        { id: 's2-1', text: 'Online nach führenden Software-Lösungen suchen' },
         {
           id: 's2-2',
-          text: 'Researches companies and offers on consumer reports website',
+          text: 'Feature-Listen, Bewertungen und Testberichte analysieren',
         },
         {
           id: 's2-3',
-          text: 'Uses current carrier website tool to compare options',
+          text: 'Kostenlose Testversion starten und erste Tests durchführen',
         },
       ],
     },
     {
       id: 'stage-3',
-      title: 'NEGOTIATE',
+      title: 'ENTSCHEIDEN',
       steps: [
         {
           id: 's3-1',
-          text: 'Calls current carrier to tell them she is shopping around',
+          text: 'Budget und Lizenzoptionen mit dem Management abstimmen',
         },
-        { id: 's3-2', text: 'Calls competitors to see what they can offer' },
+        { id: 's3-2', text: 'Passenden Tarif auswählen und Vertrag abschließen' },
       ],
     },
     {
       id: 'stage-4',
-      title: 'SELECT',
+      title: 'NUTZEN',
       steps: [
         {
           id: 's4-1',
-          text: 'Decides on a new plan and calls customer service to switch service',
+          text: 'Team einladen, Onboarding durchlaufen und Tool produktiv nutzen',
         },
       ],
     },
@@ -76,35 +76,35 @@ export const EXAMPLE_JOURNEY: JourneyMapData = {
   quotes: [
     {
       id: 'q-1',
-      text: '“I wonder if I can pay less.”',
+      text: '„Gibt es dafür nicht eine einfachere Software?“',
       xPercent: 12,
       yPercent: 23,
       tailDirection: 'down',
     },
     {
       id: 'q-2',
-      text: '“That offer seems like a better deal.”',
+      text: '„Die Feature-Übersicht sieht auf den ersten Blick super aus.“',
       xPercent: 23,
       yPercent: 72,
       tailDirection: 'up',
     },
     {
       id: 'q-3',
-      text: '“Ugh, why is this so difficult?!”',
+      text: '„Die Preisstaffelung ist für Teams leider etwas unübersichtlich.“',
       xPercent: 46,
       yPercent: 82,
       tailDirection: 'up',
     },
     {
       id: 'q-4',
-      text: '“Over it. I’m switch-ing providers.”',
+      text: '„Der Checkout-Prozess war schnell und unkompliziert.“',
       xPercent: 63,
       yPercent: 60,
       tailDirection: 'down',
     },
     {
       id: 'q-5',
-      text: '“Well, I guess that was all worth it.”',
+      text: '„Die Einführung hat sich gelohnt, wir sparen jede Woche Zeit!“',
       xPercent: 83,
       yPercent: 46,
       tailDirection: 'down',
@@ -113,20 +113,20 @@ export const EXAMPLE_JOURNEY: JourneyMapData = {
   bottomSections: [
     {
       id: 'bs-1',
-      title: 'OPPORTUNITIES',
+      title: 'CHANCEN & POTENZIALE (OPPORTUNITIES)',
       items: [
-        'Compare alternate companies’ offers for her',
-        'Breakdown current plan into $ amounts',
-        'Customer support via text messaging/chat',
+        'Transparente Feature-Matrix und ROI-Rechner auf der Website anbieten',
+        'Interaktive Produkttour während der ersten Testphase einblenden',
+        'Persönlichen Onboarding-Call für Team-Accounts bereitstellen',
       ],
     },
     {
       id: 'bs-2',
-      title: 'INTERNAL OWNERSHIP + METRICS',
+      title: 'VERANTWORTLICHKEITEN & METRIKEN',
       items: [
-        'Customer Support Team: reduce average call time to 2 minutes',
-        'Web Team: add funtionality to allow Jamie to compare plans within our site',
-        'Marketing Team: track competing offers to create competitor database',
+        'Product Team: Drop-off Rate im Onboarding-Prozess um 20% senken',
+        'Marketing Team: Conversion-Rate von Free-Trial zu Paid optimieren',
+        'Support Team: Durchschnittliche Antwortzeit unter 3 Minuten halten',
       ],
     },
   ],
@@ -157,34 +157,33 @@ export const BLANK_JOURNEY: JourneyMapData = {
   stages: [
     {
       id: 'stage-1',
-      title: 'ENTDECKEN',
+      title: 'PHASE 1',
       steps: [
-        { id: 's1-1', text: 'Problem erkennen' },
-        { id: 's1-2', text: 'Erste Recherche durchführen' },
+        { id: 's1-1', text: 'Erster Berührungspunkt' },
+        { id: 's1-2', text: 'Problem oder Bedarf erkennen' },
       ],
     },
     {
       id: 'stage-2',
-      title: 'EVALUIEREN',
+      title: 'PHASE 2',
       steps: [
         { id: 's2-1', text: 'Optionen miteinander vergleichen' },
-        { id: 's2-2', text: 'Reviews und Feedback prüfen' },
+        { id: 's2-2', text: 'Bewertungen und Informationen prüfen' },
       ],
     },
     {
       id: 'stage-3',
-      title: 'ENTSCHEIDEN',
+      title: 'PHASE 3',
       steps: [
-        { id: 's3-1', text: 'Auswahl treffen' },
-        { id: 's3-2', text: 'Kauf- / Buchungsprozess starten' },
+        { id: 's3-1', text: 'Entscheidung treffen' },
+        { id: 's3-2', text: 'Aktion oder Kauf durchführen' },
       ],
     },
     {
       id: 'stage-4',
-      title: 'NUTZEN',
+      title: 'PHASE 4',
       steps: [
-        { id: 's4-1', text: 'Erstes Onboarding durchlaufen' },
-        { id: 's4-2', text: 'Produkt im Alltag verwenden' },
+        { id: 's4-1', text: 'Produkt / Service im Alltag nutzen' },
       ],
     },
   ],
@@ -198,21 +197,21 @@ export const BLANK_JOURNEY: JourneyMapData = {
   quotes: [
     {
       id: 'q-1',
-      text: '“Das klingt genau nach dem, was ich brauche.”',
+      text: '„Das klingt genau nach dem, was ich brauche.“',
       xPercent: 20,
       yPercent: 22,
       tailDirection: 'down',
     },
     {
       id: 'q-2',
-      text: '“Hier fehlt mir noch eine klare Übersicht.”',
+      text: '„Hier fehlt mir noch eine klare Übersicht.“',
       xPercent: 50,
       yPercent: 78,
       tailDirection: 'up',
     },
     {
       id: 'q-3',
-      text: '“Super einfach eingerichtet!”',
+      text: '„Super einfach eingerichtet!“',
       xPercent: 85,
       yPercent: 28,
       tailDirection: 'down',
@@ -223,7 +222,7 @@ export const BLANK_JOURNEY: JourneyMapData = {
       id: 'bs-1',
       title: 'CHANCEN & OPPORTUNITIES',
       items: [
-        'Transparente Preisvergleiche anbieten',
+        'Transparente Übersichten bereitstellen',
         'Onboarding mit interaktivem Guide vereinfachen',
       ],
     },
@@ -231,8 +230,8 @@ export const BLANK_JOURNEY: JourneyMapData = {
       id: 'bs-2',
       title: 'METRIKEN & VERANTWORTLICHKEITEN',
       items: [
-        'UX Team: Drop-off Rate im Funnel um 15% senken',
-        'Support Team: Antwortzeit unter 5 Minuten halten',
+        'UX Team: Benutzerfreundlichkeit an kritischen Touchpoints steigern',
+        'Support Team: Zufriedenheitsrate (CSAT) über 90% halten',
       ],
     },
   ],
@@ -245,7 +244,7 @@ export const BLANK_JOURNEY: JourneyMapData = {
   },
 };
 
-const STORAGE_KEY = 'customer_journey_map_data_v1';
+const STORAGE_KEY = 'customer_journey_map_data_v2';
 
 export function loadJourneyFromStorage(): JourneyMapData {
   try {

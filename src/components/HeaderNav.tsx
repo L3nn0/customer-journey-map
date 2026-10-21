@@ -162,8 +162,8 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
                 >
                   <Sparkles size={14} className="text-amber-500" />
                   <div>
-                    <div className="font-semibold">Jumping Jamie</div>
-                    <div className="text-[10px] text-stone-400">Beispiel aus der Vorlage</div>
+                    <div className="font-semibold">Beispiel-Journey</div>
+                    <div className="text-[10px] text-stone-400">Vollständige Vorlage</div>
                   </div>
                 </button>
 

@@ -126,7 +126,7 @@ export const App: React.FC = () => {
                 type="text"
                 value={journeyData.title}
                 onChange={(e) => handleTitleChange(e.target.value)}
-                placeholder="Customer Journey Map Example"
+                placeholder="Customer Journey Map"
                 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-stone-900 border-b-2 border-dashed border-stone-300 focus:border-stone-900 focus:outline-hidden bg-transparent py-1 px-1"
               />
             ) : (
